@@ -62,6 +62,18 @@ a {
         border-color: $blue;
         color: $blue;
     }
+    &.secondary {
+        background-color: $mid;
+        &:hover {
+            background-color: transparent;
+            border-color: $mid;
+            color: $mid;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .link {
@@ -95,6 +107,13 @@ a {
         h2 {
             margin-top: 5%;
             font-size: 16px;
+        }
+    }
+    .secondary {
+        margin-left: 14px;
+        @media only screen and (max-width: 990px) {
+            margin-left: 0;
+            display: table;
         }
     }
 }
@@ -160,6 +179,23 @@ a {
             font-size: 14px;
             margin-bottom: 2%;
         }
+    }
+}
+
+#slack {
+    text-align: center;
+    h3 {
+        margin-top: 5%;
+        font-size: 18px;
+        font-weight: $bold;
+    }
+    h6 {
+        font-size: 16px;
+        margin-top: 1%;
+    }
+    .secondary {
+        margin: 2% auto 10%;
+        display: table;
     }
 }
 
