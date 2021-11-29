@@ -1,14 +1,14 @@
-$light: #F5F6F6;
-$dark: #233;
-$mid: #345;
-$grey: #678;
-$blue: #18f;
+$light: #e2e2e3;
+$dark: #15191C;
+$mid: #2f2f2f;
+$grey: #aaaaaa;
+$blue: #0069ff;
 $white: #FFF;
 $yellow: #fc4;
 $green: #3a5;
 $red: #E42;
 $transition: all 0.125s ease;
-$border-radius: 4px;
+$border-radius: 6px;
 $bold: 600;
 
 * {
@@ -19,12 +19,12 @@ $bold: 600;
     text-decoration: none;
     font-size: 14px;
     line-height: 1.5;
-    color: $dark;
+    color: $light;
 }
 
 body {
-    padding: 10%;
-    background-color: $yellow;
+    padding: 12%;
+    background-color: $dark;
 }
 
 a {
@@ -52,22 +52,19 @@ a {
     padding: 8px 24px;
     border-radius: $border-radius;
     transition: $transition;
-    background-color: $blue;
+    background-color: $mid;
     border: 2px solid transparent;
-    color: $white;
+    color: $light;
     margin-top: 2%;
     display: inline-block;
     &:hover {
-        background-color: transparent;
-        border-color: $blue;
-        color: $blue;
+        background-color: $blue;
     }
     &.secondary {
         background-color: $mid;
         &:hover {
             background-color: transparent;
             border-color: $mid;
-            color: $mid;
         }
     }
     @media only screen and (max-width: 767px) {
@@ -77,11 +74,13 @@ a {
 }
 
 .link {
-    font-size: 12px;
-    color: $blue;
-    border-bottom: 1px solid transparent;
+    font-size: 14px;
+    color: $light;
+    border-bottom: 2px solid $light;
     transition: $transition;
+    padding-bottom: 4px;
     &:hover {
+        color: $blue;
         border-color: $blue;
     }
 }
@@ -163,6 +162,19 @@ a {
         }
         .illustration {
             width: 100%;
+            filter: saturate(0%);
+            -webkit-filter: saturate(0%);
+            -moz-filter: saturate(0%);
+            -ms-filter: saturate(0%);
+            -o-filter: saturate(0%);
+            transition: $transition;
+            &:hover {
+                filter: saturate(100%);
+                -webkit-filter: saturate(100%);
+                -moz-filter: saturate(100%);
+                -ms-filter: saturate(100%);
+                -o-filter: saturate(100%);
+            }
         }
         h4 {
             font-size: 18px;
@@ -195,6 +207,7 @@ a {
         margin-top: 5%;
         font-size: 18px;
         font-weight: $bold;
+        color: $grey;
     }
     h6 {
         font-size: 16px;
@@ -215,6 +228,7 @@ a {
         font-size: 18px;
         font-weight: $bold;
         text-align: center;
+        color: $grey;
     }
     .col {
         display: inline-block;
@@ -231,7 +245,7 @@ a {
         }
         p {
             margin-top: 1%;
-            font-size: 12px;
+            font-size: 14px;
         }
     }
     .button {
@@ -247,6 +261,6 @@ a {
     text-align: center;
     p {
         color: $grey;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
