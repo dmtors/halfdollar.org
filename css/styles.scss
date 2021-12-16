@@ -52,13 +52,13 @@ a {
     padding: 8px 24px;
     border-radius: $border-radius;
     transition: $transition;
-    background-color: $mid;
+    background-color: $blue;
     border: 2px solid transparent;
     color: $light;
     margin-top: 2%;
     display: inline-block;
     &:hover {
-        background-color: $blue;
+        background-color: $mid;
     }
     &.secondary {
         background-color: $mid;
@@ -162,19 +162,19 @@ a {
         }
         .illustration {
             width: 100%;
-            filter: saturate(0%);
-            -webkit-filter: saturate(0%);
-            -moz-filter: saturate(0%);
-            -ms-filter: saturate(0%);
-            -o-filter: saturate(0%);
-            transition: $transition;
-            &:hover {
-                filter: saturate(100%);
-                -webkit-filter: saturate(100%);
-                -moz-filter: saturate(100%);
-                -ms-filter: saturate(100%);
-                -o-filter: saturate(100%);
-            }
+            // filter: saturate(0%);
+            // -webkit-filter: saturate(0%);
+            // -moz-filter: saturate(0%);
+            // -ms-filter: saturate(0%);
+            // -o-filter: saturate(0%);
+            // transition: $transition;
+            // &:hover {
+            //     filter: saturate(100%);
+            //     -webkit-filter: saturate(100%);
+            //     -moz-filter: saturate(100%);
+            //     -ms-filter: saturate(100%);
+            //     -o-filter: saturate(100%);
+            // }
         }
         h4 {
             font-size: 18px;

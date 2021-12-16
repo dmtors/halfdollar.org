@@ -43,14 +43,14 @@ a {
   padding: 8px 24px;
   border-radius: 6px;
   transition: all 0.125s ease;
-  background-color: #2f2f2f;
+  background-color: #0069ff;
   border: 2px solid transparent;
   color: #e2e2e3;
   margin-top: 2%;
   display: inline-block;
 }
 .button:hover {
-  background-color: #0069ff;
+  background-color: #2f2f2f;
 }
 .button.secondary {
   background-color: #2f2f2f;
@@ -165,19 +165,6 @@ a {
 }
 #features .col .illustration {
   width: 100%;
-  filter: saturate(0%);
-  -webkit-filter: saturate(0%);
-  -moz-filter: saturate(0%);
-  -ms-filter: saturate(0%);
-  -o-filter: saturate(0%);
-  transition: all 0.125s ease;
-}
-#features .col .illustration:hover {
-  filter: saturate(100%);
-  -webkit-filter: saturate(100%);
-  -moz-filter: saturate(100%);
-  -ms-filter: saturate(100%);
-  -o-filter: saturate(100%);
 }
 #features .col h4 {
   font-size: 18px;
